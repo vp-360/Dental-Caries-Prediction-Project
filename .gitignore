@@ -10,10 +10,6 @@ venv/
 # Operating system
 .DS_Store
 
-# Raw NHANES downloads
-data/raw/*.xpt
-!data/raw/.gitkeep
-
 # Saved model files
 outputs/models/*.joblib
 outputs/models/*.pkl
