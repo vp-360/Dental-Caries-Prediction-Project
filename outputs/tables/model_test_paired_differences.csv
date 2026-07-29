@@ -1,0 +1,10 @@
+Metric,Comparison,Observed difference,Lower 95%,Upper 95%,Excludes zero,Interpretation
+PR-AUC,Gradient Boosting minus Random Forest,0.011509551289092868,-0.008045452410144486,0.03168765724129349,False,No clear paired difference
+PR-AUC,Gradient Boosting minus Neural Network,0.0014735917749855165,-0.018289629685682495,0.020562873833054187,False,No clear paired difference
+PR-AUC,Gradient Boosting minus Logistic Regression,0.02212451611915406,0.00031596023070329545,0.041393913005393676,True,Gradient boosting higher (better)
+ROC-AUC,Gradient Boosting minus Random Forest,0.009776009707585742,0.00019246717405478622,0.01924301601417647,True,Gradient boosting higher (better)
+ROC-AUC,Gradient Boosting minus Neural Network,0.005428458231734101,-0.004202786573306689,0.014360913102264476,False,No clear paired difference
+ROC-AUC,Gradient Boosting minus Logistic Regression,0.018594562833267547,0.009231614693445323,0.027698132183583336,True,Gradient boosting higher (better)
+Brier score,Gradient Boosting minus Random Forest,-0.0019383848094476075,-0.0036125383444098953,-0.0002748376265004756,True,Gradient boosting lower (better)
+Brier score,Gradient Boosting minus Neural Network,-0.0008351812897161859,-0.002494449329037569,0.0009640374188205386,False,No clear paired difference
+Brier score,Gradient Boosting minus Logistic Regression,-0.002913018482569335,-0.004620091607635005,-0.0011850797950640124,True,Gradient boosting lower (better)
