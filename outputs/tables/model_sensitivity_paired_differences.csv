@@ -1,0 +1,3 @@
+Paired comparison,Mean PR-AUC difference,Difference SD,Minimum fold difference,Maximum fold difference,Folds where full model scored higher
+Remove self-rated teeth condition,0.07863956001948427,0.017223179902240586,0.06005331620340526,0.0993989484856293,5
+Remove race/ethnicity,0.007167180246827276,0.012078419159033666,-0.00804035926175417,0.020103570442790153,3

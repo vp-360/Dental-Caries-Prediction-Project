@@ -1,0 +1,53 @@
+Outcome group,SEQN,Feature,Readable feature,SHAP contribution,Actual cavity,Predicted probability,Threshold,Age,Income used by model,Last dental visit,Self-rated teeth
+True positive,114135,age,Age,0.09707780005575257,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,income_poverty_ratio,Income-to-poverty ratio,0.07467320055656566,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,dental_visit_recency_ord,Dental-visit recency,-0.26303963467784486,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,teeth_condition_ord,Self-rated teeth condition,0.7849363617527451,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,sex_female,Female sex,-0.05729353213564008,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,diabetes_yes,Diagnosed diabetes,-0.007493578592757695,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,diabetes_borderline,Borderline diabetes,0.004070226980479589,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,race_mexican_american,Mexican American,0.024836971406634434,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,race_other_hispanic,Other Hispanic,0.003383246979784003,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,race_non-hispanic_black,Non-Hispanic Black,0.2800593012361915,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,race_non-hispanic_asian,Non-Hispanic Asian,0.023594145828240373,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,race_other_multi,Other or multiracial,-0.015833528605191965,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+True positive,114135,income_poverty_ratio_missing,Income missing,0.18314388530943457,1,0.33659778276499264,0.13,21,Missing (imputed to 1.99),≤6 months,Fair
+False positive,124660,age,Age,0.1571707507103115,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,income_poverty_ratio,Income-to-poverty ratio,0.05840621720752646,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,dental_visit_recency_ord,Dental-visit recency,0.2212688521811469,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,teeth_condition_ord,Self-rated teeth condition,0.0950301899014169,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,sex_female,Female sex,-0.0825831472009567,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,diabetes_yes,Diagnosed diabetes,-0.008395332483458981,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,diabetes_borderline,Borderline diabetes,-0.33365893257342666,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,race_mexican_american,Mexican American,0.012799229483058555,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,race_other_hispanic,Other Hispanic,0.00876560996444719,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,race_non-hispanic_black,Non-Hispanic Black,0.25456629010139953,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,race_non-hispanic_asian,Non-Hispanic Asian,0.02654948022988766,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,race_other_multi,Other or multiracial,-0.015479712203395217,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False positive,124660,income_poverty_ratio_missing,Income missing,0.14226534684995126,0,0.21858988948028613,0.13,52,Missing (imputed to 1.99),1–2 years,Good
+False negative,111800,age,Age,-0.19732512200987645,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,income_poverty_ratio,Income-to-poverty ratio,-0.292937278848283,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,dental_visit_recency_ord,Dental-visit recency,-0.31907661698783724,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,teeth_condition_ord,Self-rated teeth condition,0.0647027240481344,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,sex_female,Female sex,-0.06911872330542874,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,diabetes_yes,Diagnosed diabetes,-0.02050934929111141,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,diabetes_borderline,Borderline diabetes,0.005634530055432598,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,race_mexican_american,Mexican American,0.022286521743561216,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,race_other_hispanic,Other Hispanic,0.003191476645549697,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,race_non-hispanic_black,Non-Hispanic Black,0.2733113515571019,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,race_non-hispanic_asian,Non-Hispanic Asian,0.01110484037723806,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,race_other_multi,Other or multiracial,-0.01964065537973738,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+False negative,111800,income_poverty_ratio_missing,Income missing,-0.025214541800752683,1,0.08516146959587852,0.13,58,3.92,≤6 months,Good
+True negative,109478,age,Age,0.3340316374104942,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,income_poverty_ratio,Income-to-poverty ratio,-0.5864773360696975,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,dental_visit_recency_ord,Dental-visit recency,0.03334681075703662,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,teeth_condition_ord,Self-rated teeth condition,-0.40108315300805275,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,sex_female,Female sex,-0.06248539786111823,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,diabetes_yes,Diagnosed diabetes,-0.014200138360519211,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,diabetes_borderline,Borderline diabetes,0.005234959922635924,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,race_mexican_american,Mexican American,0.02343832836224202,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,race_other_hispanic,Other Hispanic,-0.0005272616050591336,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,race_non-hispanic_black,Non-Hispanic Black,-0.09651732383399775,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,race_non-hispanic_asian,Non-Hispanic Asian,0.016007857541524572,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,race_other_multi,Other or multiracial,-0.018530105641684336,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good
+True negative,109478,income_poverty_ratio_missing,Income missing,-0.0275787538515625,0,0.06875662778842163,0.13,27,5.00,6–12 months,Very good

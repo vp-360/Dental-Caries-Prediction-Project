@@ -1,0 +1,83 @@
+{
+  "primary_model": "Gradient Boosting",
+  "primary_model_sha256": "e980b0e587f845641f0b2282c1a933de861e07ea1e9cf263924759de710a028d",
+  "primary_threshold": 0.13,
+  "intended_use": "pre-examination questionnaire-based screening and referral prioritization",
+  "training_file_sha256": "a09762f3f56eb432c9668dcafa90b1f751198447916dc8aa02fc4d74766926fd",
+  "test_file_sha256": "45eccddb3987855d3cd02929597d967160dc0138c402825b2c2841d36bccaa24",
+  "features": [
+    "age",
+    "income_poverty_ratio",
+    "dental_visit_recency_ord",
+    "teeth_condition_ord",
+    "sex_female",
+    "diabetes_yes",
+    "diabetes_borderline",
+    "race_mexican_american",
+    "race_other_hispanic",
+    "race_non-hispanic_black",
+    "race_non-hispanic_asian",
+    "race_other_multi",
+    "income_poverty_ratio_missing"
+  ],
+  "permutation_importance": {
+    "dataset": "test_data.csv",
+    "scoring": "average_precision",
+    "repeats": 30,
+    "random_state": 42,
+    "grouped_columns": {
+      "Race/ethnicity": [
+        "race_mexican_american",
+        "race_other_hispanic",
+        "race_non-hispanic_black",
+        "race_non-hispanic_asian",
+        "race_other_multi"
+      ],
+      "Diabetes status": [
+        "diabetes_yes",
+        "diabetes_borderline"
+      ],
+      "Income (value + missingness)": [
+        "income_poverty_ratio",
+        "income_poverty_ratio_missing"
+      ],
+      "Age": [
+        "age"
+      ],
+      "Dental-visit recency": [
+        "dental_visit_recency_ord"
+      ],
+      "Self-rated teeth condition": [
+        "teeth_condition_ord"
+      ],
+      "Female sex": [
+        "sex_female"
+      ]
+    },
+    "used_for_model_changes": false
+  },
+  "shap": {
+    "dataset": "test_data.csv",
+    "explainer": "TreeExplainer",
+    "output_scale": "log_odds",
+    "version": "0.52.0",
+    "maximum_additivity_error": 7.105427357601002e-15
+  },
+  "sensitivity_analyses": {
+    "dataset": "training_data.csv",
+    "n_splits": 5,
+    "shuffle": true,
+    "random_state": 42,
+    "analyses": [
+      "without self-rated teeth condition",
+      "without race/ethnicity",
+      "complete-income participants versus full imputed cohort"
+    ],
+    "reduced_preprocessing": "explicit name-based ColumnTransformer",
+    "model_settings_retuned": false,
+    "test_set_used": false
+  },
+  "models_or_thresholds_changed": false,
+  "survey_design_incorporated": false,
+  "survey_weight_scope": "unweighted individual-level prediction; not national population estimation"
+}
