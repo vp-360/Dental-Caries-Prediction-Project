@@ -1,0 +1,65 @@
+{
+  "primary_model": "Gradient Boosting",
+  "primary_model_sha256": "e980b0e587f845641f0b2282c1a933de861e07ea1e9cf263924759de710a028d",
+  "primary_threshold": 0.13,
+  "training_file_sha256": "a09762f3f56eb432c9668dcafa90b1f751198447916dc8aa02fc4d74766926fd",
+  "test_file_sha256": "45eccddb3987855d3cd02929597d967160dc0138c402825b2c2841d36bccaa24",
+  "out_of_fold_predictions_sha256": "f80f8ae06b18099c40e4d949d737a4ca2074d4fd5672c21dff54e8d7a61082ba",
+  "test_rows": 2643,
+  "subgroup_dimensions": {
+    "Age group": [
+      "1\u201311",
+      "12\u201317",
+      "18\u201334",
+      "35\u201349",
+      "50\u201364",
+      "65+"
+    ],
+    "Sex": [
+      "Female",
+      "Male"
+    ],
+    "Race/ethnicity": [
+      "Mexican American",
+      "Other Hispanic",
+      "Non-Hispanic White",
+      "Non-Hispanic Black",
+      "Non-Hispanic Asian",
+      "Other or multiracial"
+    ],
+    "Income group": [
+      "Below poverty (<1.00)",
+      "Near poverty (1.00\u20131.99)",
+      "Middle income (2.00\u20133.99)",
+      "Higher income (4.00+)",
+      "Income not reported"
+    ]
+  },
+  "income_not_reported_handling": "separate data-availability group; never assigned to an imputed income band",
+  "intersectional_groups_analyzed": false,
+  "models_retrained": false,
+  "finalized_threshold_changed": false,
+  "bootstrap": {
+    "method": "ordinary participant-level percentile bootstrap",
+    "resamples": 2000,
+    "confidence_level": 0.95,
+    "random_state": 42,
+    "model_retrained": false,
+    "same_indices_across_subgroups": true,
+    "paired_difference_reference": "everyone outside the subgroup within the same dimension; reported-income contrasts exclude income not reported",
+    "subgroup_counts_fixed": false,
+    "survey_design_incorporated": false
+  },
+  "operating_point_sensitivity": {
+    "target_recall": 0.8,
+    "development_probabilities": "model_out_of_fold_predictions.csv",
+    "selection_rule": "highest subgroup threshold whose Wilson 95% recall lower bound reaches the target",
+    "matched_flag_share": 0.5138100643208475,
+    "used_to_change_finalized_threshold": false,
+    "deployment_status": "diagnostic only; requires external validation and clinical, ethical, legal, and operational review"
+  },
+  "pr_auc_skill_definition": "(PR-AUC - subgroup prevalence) / (1 - subgroup prevalence)",
+  "observed_income_complements_exclude_unreported": true,
+  "calibration_slope_minimum_cases": 100,
+  "survey_weight_scope": "unweighted individual-level prediction; not national population estimation"
+}
